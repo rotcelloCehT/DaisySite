@@ -1,0 +1,43 @@
+@font-face {
+  font-family: LatoRegular;
+  src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoBold;
+  src: url(./fonts/Lato/Lato-Bold.ttf);
+}
+
+/* Remove padding and margin */ 
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+.container  {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F7F1E3;
+}
+
+img {
+  max-width: 75%;
+  margin-bottom: 1vh;
+}
+
+h1 {
+  font-family: LatoBold;
+  color: #353560;
+  font-size: 4vh;
+  margin-bottom: .5vh;
+}
+
+h3 {
+  font-family: LatoRegular;
+  color: #353560;
+  font-size: 2vh;
+}
