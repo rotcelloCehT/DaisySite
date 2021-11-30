@@ -6,13 +6,16 @@
   font-family: LatoBold;
   src: url(./fonts/Lato/Lato-Bold.ttf);
 }
+@font-face {
+  font-family: Fred;
+  src: url(./fonts/Lato/FredokaOne-Regular.ttf);
+}
 
 /* Remove padding and margin */ 
-*  
-    { 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
+*  { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
 }
 
 .container  {
@@ -23,8 +26,7 @@
   flex-direction: column;
   background: #F7F1E3;
 }
-
-img {
+.container img {
   max-width: 75%;
   margin-bottom: 1vh;
 }
@@ -33,11 +35,33 @@ h1 {
   font-family: LatoBold;
   color: #353560;
   font-size: 4vh;
-  margin-bottom: .5vh;
+  margin-bottom: 2vh;
 }
 
-h3 {
-  font-family: LatoRegular;
-  color: #353560;
-  font-size: 2vh;
+.link-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 58px;
+}
+.github {
+  height: 35px;
+  width: 35px;
+  background-image: url(./images/git.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.videoBtn {
+  text-decoration: none;
+  color: #F7F1E3;
+  font-family: Fred;
+  font-weight: 50;
+  padding: 8px 15px;
+  border-radius: 18px;
+  background-color: #706FD3;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.videoBtn:hover {
+  box-shadow: none;
 }
